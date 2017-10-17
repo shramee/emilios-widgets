@@ -1,11 +1,11 @@
 <?php
 
 /**
- * My Plugin public class
+ * Wixbu Widgets and Customizations public class
  */
-class My_Plugin_Public{
+class Wixbu_Customizations_Public{
 
-	/** @var My_Plugin_Public Instance */
+	/** @var Wixbu_Customizations_Public Instance */
 	private static $_instance = null;
 
 	/* @var string $token Plugin token */
@@ -21,8 +21,8 @@ class My_Plugin_Public{
 	public $version;
 
 	/**
-	 * My Plugin public class instance
-	 * @return My_Plugin_Public instance
+	 * Wixbu Widgets and Customizations public class instance
+	 * @return Wixbu_Customizations_Public instance
 	 */
 	public static function instance() {
 		if ( null == self::$_instance ) {
@@ -37,10 +37,10 @@ class My_Plugin_Public{
 	 * @since   1.0.0
 	 */
 	private function __construct() {
-		$this->token   =   My_Plugin::$token;
-		$this->url     =   My_Plugin::$url;
-		$this->path    =   My_Plugin::$path;
-		$this->version =   My_Plugin::$version;
+		$this->token   =   Wixbu_Customizations::$token;
+		$this->url     =   Wixbu_Customizations::$url;
+		$this->path    =   Wixbu_Customizations::$path;
+		$this->version =   Wixbu_Customizations::$version;
 	}
 
 	/**

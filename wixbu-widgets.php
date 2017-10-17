@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: My Plugin
+Plugin Name: Wixbu Widgets and Customizations
 Plugin URI: http://shramee.me/
 Description: Simple plugin starter for quick delivery
 Author: Shramee
@@ -15,16 +15,16 @@ require 'inc/class-admin.php';
 require 'inc/class-public.php';
 
 /**
- * My Plugin main class
+ * Wixbu Widgets and Customizations main class
  * @static string $token Plugin token
  * @static string $file Plugin __FILE__
  * @static string $url Plugin root dir url
  * @static string $path Plugin root dir path
  * @static string $version Plugin version
  */
-class My_Plugin{
+class Wixbu_Customizations{
 
-	/** @var My_Plugin Instance */
+	/** @var Wixbu_Customizations Instance */
 	private static $_instance = null;
 
 	/** @var string Token */
@@ -42,15 +42,15 @@ class My_Plugin{
 	/** @var string Plugin directory path */
 	public static $path;
 
-	/** @var My_Plugin_Admin Instance */
+	/** @var Wixbu_Customizations_Admin Instance */
 	public $admin;
 
-	/** @var My_Plugin_Public Instance */
+	/** @var Wixbu_Customizations_Public Instance */
 	public $public;
 
 	/**
 	 * Return class instance
-	 * @return My_Plugin instance
+	 * @return Wixbu_Customizations instance
 	 */
 	public static function instance( $file ) {
 		if ( null == self::$_instance ) {
@@ -67,7 +67,7 @@ class My_Plugin{
 	 */
 	private function __construct( $file ) {
 
-		self::$token   = 'my-plugin';
+		self::$token   = 'wbwc';
 		self::$file    = $file;
 		self::$url     = plugin_dir_url( $file );
 		self::$path    = plugin_dir_path( $file );
@@ -83,7 +83,7 @@ class My_Plugin{
 	 */
 	private function _admin() {
 		//Instantiating admin class
-		$this->admin = My_Plugin_Admin::instance();
+		$this->admin = Wixbu_Customizations_Admin::instance();
 
 		//Enqueue admin end JS and CSS
 		add_action( 'admin_enqueue_scripts',	array( $this->admin, 'enqueue' ) );
@@ -95,7 +95,7 @@ class My_Plugin{
 	 */
 	private function _public() {
 		//Instantiating public class
-		$this->public = My_Plugin_Public::instance();
+		$this->public = Wixbu_Customizations_Public::instance();
 
 		//Enqueue front end JS and CSS
 		add_action( 'wp_enqueue_scripts',	array( $this->public, 'enqueue' ) );
@@ -104,4 +104,4 @@ class My_Plugin{
 }
 
 /** Intantiating main plugin class */
-My_Plugin::instance( __FILE__ );
+Wixbu_Customizations::instance( __FILE__ );

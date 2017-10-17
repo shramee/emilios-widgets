@@ -40,14 +40,14 @@ The WordPress Plugin Boilerplate is licensed under the GPL v2 or later.
 
 ## Just these two things to get started quickly
 
-1. Change `my-plugin.php` and `class-my-plugin.php` to something like `your-awesome-addon.php` and `class-your-awesome-addon.php`
+1. Change `wbwc.php` and `class-wbwc.php` to something like `your-awesome-addon.php` and `class-your-awesome-addon.php`
 2. Do following search and replace through your entire project
 
 Search For | Replace With
 -----------|-------------
-My_Plugin | My_Awesome_Plugin
-My Plugin | My Awesome Plugin
-my-plugin | my-awesome-plugin
+Wixbu_Customizations | My_Awesome_Plugin
+Wixbu Widgets and Customizations | My Awesome Plugin
+wbwc | my-awesome-plugin
 
 ##Documentation
 

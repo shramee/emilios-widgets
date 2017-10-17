@@ -1,10 +1,10 @@
 <?php
 /**
- * My Plugin Admin class
+ * Wixbu Widgets and Customizations Admin class
  */
-class My_Plugin_Admin {
+class Wixbu_Customizations_Admin {
 
-	/** @var My_Plugin_Admin Instance */
+	/** @var Wixbu_Customizations_Admin Instance */
 	private static $_instance = null;
 
 	/* @var string $token Plugin token */
@@ -20,9 +20,9 @@ class My_Plugin_Admin {
 	public $version;
 
 	/**
-	 * Main My Plugin Instance
+	 * Main Wixbu Widgets and Customizations Instance
 	 * Ensures only one instance of Storefront_Extension_Boilerplate is loaded or can be loaded.
-	 * @return My_Plugin_Admin instance
+	 * @return Wixbu_Customizations_Admin instance
 	 * @since 	1.0.0
 	 */
 	public static function instance() {
@@ -38,10 +38,10 @@ class My_Plugin_Admin {
 	 * @since 	1.0.0
 	 */
 	private function __construct() {
-		$this->token   =   My_Plugin::$token;
-		$this->url     =   My_Plugin::$url;
-		$this->path    =   My_Plugin::$path;
-		$this->version =   My_Plugin::$version;
+		$this->token   =   Wixbu_Customizations::$token;
+		$this->url     =   Wixbu_Customizations::$url;
+		$this->path    =   Wixbu_Customizations::$path;
+		$this->version =   Wixbu_Customizations::$version;
 	} // End __construct()
 
 	/**
