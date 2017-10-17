@@ -4,24 +4,33 @@
  * @package My_Plugin
  * @version 1.0.0
  */
-.sidebar .widget .widget-title {
-  margin: 0;
-  padding: 16px 16px 11px;
-  text-align: center; }
-.sidebar .widget.widget_course_syllabus .widget-title {
-  cursor: pointer; }
-.sidebar .widget.widget_course_syllabus .section-header {
-  display: none; }
-.sidebar .widget .llms-progress {
-  margin-top: 7px; }
-.sidebar .widget .llms-section, .sidebar .widget .wixbu-section {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 7px 0;
-  transition: max-height 0.5s; }
-.sidebar .widget.wixbu-expanded .llms-section, .sidebar .widget.wixbu-expanded .wixbu-section {
-  max-height: 999px; }
-.sidebar .widget p {
-  text-align: justify; }
+.sidebar.widget-area .widget {
+  padding: 7px 0;
+  line-height: 1.6; }
+  .sidebar.widget-area .widget .widget-title {
+    margin: 0;
+    padding: 16px 16px 11px;
+    text-align: center; }
+    .sidebar.widget-area .widget .widget-title + * {
+      margin: 0 7px;
+      width: auto; }
+  .sidebar.widget-area .widget p {
+    text-align: justify; }
+  .sidebar.widget-area .widget.widget_course_syllabus .widget-title, .sidebar.widget-area .widget.widget_wixbu_course_description .widget-title {
+    cursor: pointer; }
+  .sidebar.widget-area .widget.widget_course_syllabus .section-header {
+    display: none; }
+  .sidebar.widget-area .widget.widget_course_syllabus .llms-lesson li {
+    padding: 0.7em 0; }
+  .sidebar.widget-area .widget .llms-progress {
+    margin-top: 7px; }
+  .sidebar.widget-area .widget .llms-section, .sidebar.widget-area .widget .wixbu-section {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 25px;
+    transition: max-height 0.5s, padding 0.5s; }
+  .sidebar.widget-area .widget.wixbu-expanded .llms-section, .sidebar.widget-area .widget.wixbu-expanded .wixbu-section {
+    padding: 7px 25px 16px;
+    max-height: 700px; }
 
 /*# sourceMappingURL=front.css.map */

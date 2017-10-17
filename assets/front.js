@@ -7,8 +7,14 @@
 jQuery(function ($) {
 
 	$( '.widget-title' ).click( function () {
-		var $t = $( this );
-		$t.closest( '.widget' ).toggleClass( 'wixbu-expanded' );
+		var $wid = $( this ).closest( '.widget' );
+		$wid.find( '.llms-section, .wixbu-section' ).css( 'overflow', 'hidden' );
+		$wid.toggleClass( 'wixbu-expanded' );
+		setTimeout( function () {
+			if ( $wid.hasClass( 'wixbu-expanded' ) ) {
+				$wid.find( '.llms-section, .wixbu-section' ).css( 'overflow', 'auto' );
+			}
+		}, 500 );
 	} );
 
 });
