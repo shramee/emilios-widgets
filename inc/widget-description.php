@@ -1,4 +1,7 @@
 <?php
+/**
+ * Widget to display sidebar description meta
+ */
 
 /** Register the widget */
 add_action( 'widgets_init', 'Widget_Wixbu_Course_Description::register_widget' );
@@ -84,7 +87,7 @@ class Widget_Wixbu_Course_Description extends WP_Widget {
 		// @TODO get real content
 		$content = get_post_meta( get_the_ID(), '_wixbu_sidebar_desc', 'single' );
 		?>
-		<div class="wixbu-section" style="overflow: auto;">
+		<div class="wixbu-section">
 			<?php echo do_shortcode( wpautop( $content ) ); ?>
 		</div>
 		<?php
