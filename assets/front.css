@@ -4,3 +4,22 @@
  * @package My_Plugin
  * @version 1.0.0
  */
+.sidebar .widget .widget-title {
+  margin: 0;
+  padding: 16px 16px 11px;
+  text-align: center; }
+.sidebar .widget.widget_course_syllabus .widget-title {
+  cursor: pointer; }
+.sidebar .widget.widget_course_syllabus .section-header {
+  display: none; }
+.sidebar .widget .llms-progress {
+  margin-top: 7px; }
+.sidebar .widget .llms-section, .sidebar .widget .wixbu-section {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 7px 0;
+  transition: max-height 0.5s; }
+.sidebar .widget.wixbu-expanded .llms-section, .sidebar .widget.wixbu-expanded .wixbu-section {
+  max-height: 999px; }
+
+/*# sourceMappingURL=front.css.map */

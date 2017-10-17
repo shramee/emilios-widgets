@@ -6,6 +6,9 @@
  */
 jQuery(function ($) {
 
-    //Put all jquery code in here
+	$( '.widget-title' ).click( function () {
+		var $t = $( this );
+		$t.closest( '.widget' ).toggleClass( 'wixbu-expanded' );
+	} );
 
 });

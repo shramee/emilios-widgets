@@ -1,0 +1,38 @@
+/**
+ * Plugin front end styles
+ *
+ * @package My_Plugin
+ * @version 1.0.0
+ */
+
+.sidebar .widget {
+	.widget-title {
+		margin: 0;
+		padding: 16px 16px 11px;
+		text-align: center;
+	}
+	&.widget_course_syllabus {
+		.widget-title {
+			cursor: pointer;
+		}
+		.section-header {
+			display: none;
+		}
+	}
+
+	.llms-progress {
+		margin-top: 7px;
+	}
+
+	.llms-section, .wixbu-section {
+		max-height:0;
+		overflow: hidden;
+		padding: 0 7px 0;
+		transition: max-height 0.5s;
+	}
+	&.wixbu-expanded {
+		.llms-section, .wixbu-section {
+			max-height:999px;
+		}
+	}
+}
