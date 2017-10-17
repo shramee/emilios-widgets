@@ -13,6 +13,8 @@ Author URI: http://shramee.me/
 require 'inc/class-admin.php';
 /** Plugin public class */
 require 'inc/class-public.php';
+/** Plugin public class */
+require 'inc/widget-description.php';
 
 /**
  * Wixbu Widgets and Customizations main class
@@ -87,6 +89,12 @@ class Wixbu_Customizations{
 
 		//Enqueue admin end JS and CSS
 		add_action( 'admin_enqueue_scripts',	array( $this->admin, 'enqueue' ) );
+
+		//Add sidebar description field in course options
+		add_filter( 'llms_metabox_fields_lifterlms_course_options', array( $this->admin, 'sidebar_description_field' ) );
+
+		//Save sidebar description field
+		add_action( 'save_post', array( $this->admin, 'save_post' ) );
 
 	}
 

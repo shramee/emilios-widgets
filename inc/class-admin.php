@@ -55,4 +55,29 @@ class Wixbu_Customizations_Admin {
 		wp_enqueue_style( $token . '-css', $url . '/assets/admin.css' );
 		wp_enqueue_script( $token . '-js', $url . '/assets/admin.js', array( 'jquery' ) );
 	}
+
+	public function sidebar_description_field( $content ) {
+
+		/** Sidebar descripiton field class */
+		require 'class-sidebar-description-field.php';
+
+		$content[0]['fields'][] = [
+			'type'		=> 'sidebar-description',
+			'label'		=> __( 'Sidebar description', 'lifterlms' ),
+			'desc' 		=> __( 'This description will be shown in the sidebar.', 'lifterlms' ),
+			'id' 		=> '_wixbu_sidebar_desc',
+		];
+		return $content;
+	}
+
+	public function save_post() {
+		if ( isset( $_POST['post_ID'] ) ) {
+			update_post_meta(
+				$_POST['post_ID'],
+				'_wixbu_sidebar_desc',
+				filter_input( INPUT_POST, '_wixbu_sidebar_desc' )
+			);
+		}
+
+	}
 }
