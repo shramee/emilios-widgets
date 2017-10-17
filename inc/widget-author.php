@@ -94,7 +94,9 @@ class Widget_Wixbu_Author extends WP_Widget {
 		}
 		?>
 		<div class="wixbu-section">
-			<?php echo $author_desc; ?>
+			<p>
+				<?php echo $author_desc; ?>
+			</p>
 		</div>
 		<?php
 	}
