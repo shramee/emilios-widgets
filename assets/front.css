@@ -21,5 +21,7 @@
   transition: max-height 0.5s; }
 .sidebar .widget.wixbu-expanded .llms-section, .sidebar .widget.wixbu-expanded .wixbu-section {
   max-height: 999px; }
+.sidebar .widget p {
+  text-align: justify; }
 
 /*# sourceMappingURL=front.css.map */
