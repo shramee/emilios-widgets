@@ -14,9 +14,15 @@
     .sidebar.widget-area .widget .widget-title + * {
       margin: 0 7px;
       width: auto; }
+  .sidebar.widget-area .widget.widget_wixbu_author {
+    padding-top: 0; }
+  .sidebar.widget-area .widget .wixbu-author-pic {
+    padding: 70% 0 0;
+    background: center top / cover #22033d;
+    margin: 0; }
   .sidebar.widget-area .widget p {
     text-align: justify; }
-  .sidebar.widget-area .widget.widget_course_syllabus .widget-title, .sidebar.widget-area .widget.widget_wixbu_course_description .widget-title {
+  .sidebar.widget-area .widget.widget_wixbu_author .widget-title, .sidebar.widget-area .widget.widget_course_syllabus .widget-title, .sidebar.widget-area .widget.widget_wixbu_course_description .widget-title {
     cursor: pointer; }
   .sidebar.widget-area .widget.widget_course_syllabus .section-header {
     display: none; }

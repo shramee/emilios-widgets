@@ -13,8 +13,10 @@ Author URI: http://shramee.me/
 require 'inc/class-admin.php';
 /** Plugin public class */
 require 'inc/class-public.php';
-/** Plugin public class */
+/** Sidebar description widget */
 require 'inc/widget-description.php';
+/** Author widget */
+require 'inc/widget-author.php';
 
 /**
  * Wixbu Widgets and Customizations main class

@@ -19,11 +19,22 @@
 		 }
 	}
 
+	&.widget_wixbu_author {
+		padding-top: 0;
+	}
+
+	.wixbu-author-pic {
+		padding: 70% 0 0;
+		background: center top / cover #22033d;
+		margin: 0;
+	}
+
 	p {
 		text-align: justify;
 	}
 
 	// Make accordian widgets have cursor pointer on title
+	&.widget_wixbu_author,
 	&.widget_course_syllabus,
 	&.widget_wixbu_course_description {
 		.widget-title {
