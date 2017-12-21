@@ -73,3 +73,91 @@
 		}
 	}
 }
+
+// region Widget and course section titles
+.section-title:before,
+.section-title:after,
+.llms-h3:before,
+.llms-h3:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	text-align:center;
+	width: 999px;
+	margin: auto;
+	border-bottom: 2px solid;
+}
+.section-title:before,
+.llms-h3:before{
+	right: 100%;
+}
+.section-title:after,
+.llms-h3:after{
+	left: 100%;
+}
+
+.llms-h3 {
+	padding: 30px 10px;
+	display: inline-block;
+	position: relative;
+	background: #e5e5e5;
+	text-transform: uppercase;
+	color: #9b2256;
+}
+
+.llms-syllabus-wrapper{
+	overflow: hidden;
+}
+
+.section-title {
+	padding: 20px 10px;
+	display: inline-block;
+	position: relative;
+	background: white;
+	text-transform: uppercase;
+	color: #9b2256;
+}
+
+#right-sidebar .widget.widget_course_syllabus .section-header {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+
+// endregion
+
+// region Courses gallery and single
+
+.llms-form-field #llms_mark_complete {
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #9b2256;
+	background: transparent;
+	border: 2px solid #9b2256;
+	border-radius: 4px;
+	width: 350px;
+	padding: 20px 0;
+	margin: auto;
+}
+
+.llms-loop-link .llms-loop-item-footer {
+	display: block;
+}
+
+.llms-loop-item-footer .llms-author,
+.llms-loop-item-footer .llms-difficulty {
+	display: none;
+}
+
+.llms-loop-item-footer {
+	text-align: center;
+}
+
+.llms-loop-item-footer .llms-course-length {
+	padding-bottom: 10px;
+	font-weight: 600;
+}
+
+// endregion
