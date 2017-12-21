@@ -6,17 +6,17 @@
  */
 
 .sidebar.widget-area .widget {
-	padding: 7px 0;
+	padding: 0;
 	line-height: 1.6;
 
 	.widget-title {
 		margin: 0;
 		padding: 16px 16px 11px;
 		text-align: center;
-		 + * {
-			 margin: 0 7px;
-			 width: auto;
-		 }
+		+ * {
+			margin: 0 7px;
+			width: auto;
+		}
 	}
 
 	&.widget_wixbu_author {
@@ -54,8 +54,12 @@
 
 	// Course Progress widget
 	.llms-progress {
-		margin-top: 7px;
-	}
+		padding: 0 7px 11px;
+		.llms-progress-bar {
+			background-color: #eee;
+			box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16);
+		}
+		}
 
 	// Widget sections collapsed by default
 	.llms-section, .wixbu-section {
@@ -63,6 +67,8 @@
 		overflow: hidden;
 		padding: 0 25px;
 		transition: max-height 0.5s, padding 0.5s;
+		margin: 0;
+		border: none;
 	}
 
 	// Widget sections expanded styles
@@ -102,7 +108,6 @@
 	padding: 30px 10px;
 	display: inline-block;
 	position: relative;
-	background: #e5e5e5;
 	text-transform: uppercase;
 	color: #9b2256;
 }
@@ -120,12 +125,17 @@
 	color: #9b2256;
 }
 
-#right-sidebar .widget.widget_course_syllabus .section-header {
-	display: block;
-	overflow: hidden;
-	text-align: center;
+#right-sidebar .widget {
+	background: #f7f7f7;
+	&.widget_course_syllabus .section-header {
+		display: block;
+		overflow: hidden;
+		text-align: center;
+	}
+	.section-title {
+		background: #f7f7f7;
+	}
 }
-
 // endregion
 
 // region Courses gallery and single

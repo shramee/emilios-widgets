@@ -5,7 +5,7 @@
  * @version 1.0.0
  */
 .sidebar.widget-area .widget {
-  padding: 7px 0;
+  padding: 0;
   line-height: 1.6; }
   .sidebar.widget-area .widget .widget-title {
     margin: 0;
@@ -29,12 +29,17 @@
   .sidebar.widget-area .widget.widget_course_syllabus .llms-lesson li {
     padding: 0.7em 0; }
   .sidebar.widget-area .widget .llms-progress {
-    margin-top: 7px; }
+    padding: 0 7px 11px; }
+    .sidebar.widget-area .widget .llms-progress .llms-progress-bar {
+      background-color: #eee;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); }
   .sidebar.widget-area .widget .llms-section, .sidebar.widget-area .widget .wixbu-section {
     max-height: 0;
     overflow: hidden;
     padding: 0 25px;
-    transition: max-height 0.5s, padding 0.5s; }
+    transition: max-height 0.5s, padding 0.5s;
+    margin: 0;
+    border: none; }
   .sidebar.widget-area .widget.wixbu-expanded .llms-section, .sidebar.widget-area .widget.wixbu-expanded .wixbu-section {
     padding: 7px 25px 16px;
     max-height: 700px; }
@@ -65,7 +70,6 @@
   padding: 30px 10px;
   display: inline-block;
   position: relative;
-  background: #e5e5e5;
   text-transform: uppercase;
   color: #9b2256; }
 
@@ -80,10 +84,14 @@
   text-transform: uppercase;
   color: #9b2256; }
 
-#right-sidebar .widget.widget_course_syllabus .section-header {
-  display: block;
-  overflow: hidden;
-  text-align: center; }
+#right-sidebar .widget {
+  background: #f7f7f7; }
+  #right-sidebar .widget.widget_course_syllabus .section-header {
+    display: block;
+    overflow: hidden;
+    text-align: center; }
+  #right-sidebar .widget .section-title {
+    background: #f7f7f7; }
 
 .llms-form-field #llms_mark_complete {
   font-weight: 600;
