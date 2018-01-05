@@ -54,4 +54,12 @@ class Wixbu_Customizations_Public{
 		wp_enqueue_style( $token . '-css', $url . '/assets/front.css' );
 		wp_enqueue_script( $token . '-js', $url . '/assets/front.js', array( 'jquery' ) );
 	}
+
+	public function back_to_parent() {
+		global $post;
+
+		$lesson = new LLMS_Lesson( $post );
+
+		printf( __( '<p class="llms-parent-course-link"><a class="llms-button-action llms-lesson-link" href="%1$s">VOLVER A CURSO</a></p>', 'lifterlms' ), get_permalink( $lesson->get_parent_course() ), get_the_title( $lesson->get_parent_course() ) );
+	}
 }
