@@ -62,4 +62,12 @@ class Wixbu_Customizations_Public{
 
 		printf( __( '<p class="llms-parent-course-link"><a class="llms-button-action llms-lesson-link" href="%1$s">VOLVER A CURSO</a></p>', 'lifterlms' ), get_permalink( $lesson->get_parent_course() ), get_the_title( $lesson->get_parent_course() ) );
 	}
+
+	public function lesson_title() {
+		the_title( '<h2 class="lesson-title">', '</h2>' );
+	}
+
+	public function my_courses() {
+		return LLMS_Shortcode_Courses::instance()->output( [ 'mine' => 'enrolled' ] );
+	}
 }

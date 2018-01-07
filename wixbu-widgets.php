@@ -111,6 +111,8 @@ class Wixbu_Customizations{
 		add_action( 'wp_enqueue_scripts',	array( $this->public, 'enqueue' ) );
 		remove_action( 'lifterlms_single_lesson_before_summary', 'lifterlms_template_single_parent_course', 10 );
 		add_action( 'lifterlms_single_lesson_before_summary', array( $this->public, 'back_to_parent' ), 7 );
+		add_action( 'lifterlms_single_lesson_before_summary', array( $this->public, 'lesson_title' ), 50 );
+		add_shortcode( 'wixbu_my_courses', array( $this->public, 'my_courses' ), 50 );
 
 	}
 }
