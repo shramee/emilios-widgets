@@ -56,6 +56,11 @@ class Wixbu_Customizations_Admin {
 		wp_enqueue_script( $token . '-js', $url . '/assets/admin.js', array( 'jquery' ) );
 	}
 
+	public function admin_body_class( $classes ) {
+		$user = wp_get_current_user();
+		return $classes . " user-role-{$user->roles[0]}";
+	}
+
 	public function sidebar_description_field( $content ) {
 
 		/** Sidebar descripiton field class */

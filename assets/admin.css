@@ -1,6 +1,30 @@
 /**
  * Plugin front end styles
  *
- * @package My_Plugin
+ * @package Vimeo_LLMS
  * @version 1.0.0
  */
+.user-role-instructor li.llms-mb-list.post-content,
+.user-role-instructor li.llms-mb-list.post-excerpt,
+.user-role-instructor #pageparentdiv,
+.user-role-instructor #generate_layout_meta_box,
+.user-role-instructor #generate_footer_widget_meta_box,
+.user-role-instructor #generate_page_builder_meta_box,
+.user-role-instructor #generate_de_meta_box,
+.user-role-instructor #lifterlms-students,
+.user-role-instructor #lifterlms-students,
+.user-role-instructor #llms-instructors,
+.user-role-instructor #postexcerpt,
+.user-role-instructor #authordiv,
+.user-role-instructor #slugdiv,
+.user-role-instructor #commentsdiv,
+.user-role-instructor #commentstatusdiv,
+.user-role-instructor #postcustom,
+.user-role-instructor #revisionsdiv,
+.user-role-instructor #generate_select_page_header_meta_box,
+.user-role-instructor #elementor-switch-mode,
+.user-role-instructor #elementor-editor,
+.user-role-instructor #postdivrich {
+  display: none !important; }
+
+/*# sourceMappingURL=admin.css.map */

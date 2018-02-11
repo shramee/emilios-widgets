@@ -1,7 +1,7 @@
 /**
  * Plugin front end scripts
  *
- * @package My_Plugin
+ * @package Vimeo_LLMS
  * @version 1.0.0
  */
 jQuery(function ($) {

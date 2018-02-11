@@ -1,0 +1,32 @@
+/**
+ * Plugin front end styles
+ *
+ * @package Vimeo_LLMS
+ * @version 1.0.0
+ */
+
+.user-role-instructor {
+	li.llms-mb-list.post-content,
+	li.llms-mb-list.post-excerpt,
+	#pageparentdiv,
+	#generate_layout_meta_box,
+	#generate_footer_widget_meta_box,
+	#generate_page_builder_meta_box,
+	#generate_de_meta_box,
+	#lifterlms-students,
+	#lifterlms-students,
+	#llms-instructors,
+	#postexcerpt,
+	#authordiv,
+	#slugdiv,
+	#commentsdiv,
+	#commentstatusdiv,
+	#postcustom,
+	#revisionsdiv,
+	#generate_select_page_header_meta_box,
+	#elementor-switch-mode,
+	#elementor-editor,
+	#postdivrich {
+		display: none !important;
+	}
+}
