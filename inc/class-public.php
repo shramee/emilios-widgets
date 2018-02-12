@@ -55,6 +55,12 @@ class Wixbu_Customizations_Public{
 		wp_enqueue_script( $token . '-js', $url . '/assets/front.js', array( 'jquery' ) );
 	}
 
+	public function the_excerpt( $excerpt ) {
+		if ( has_excerpt() ) {
+			return $excerpt;
+		}
+	}
+
 	public function back_to_parent() {
 		global $post;
 

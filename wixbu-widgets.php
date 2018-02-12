@@ -109,6 +109,7 @@ class Wixbu_Customizations{
 
 		//Enqueue front end JS and CSS
 		add_action( 'wp_enqueue_scripts',	array( $this->public, 'enqueue' ) );
+		add_action( 'the_excerpt',	array( $this->public, 'the_excerpt' ), 16 );
 		remove_action( 'lifterlms_single_lesson_before_summary', 'lifterlms_template_single_parent_course', 10 );
 		add_action( 'lifterlms_single_lesson_before_summary', array( $this->public, 'back_to_parent' ), 7 );
 		add_action( 'lifterlms_single_lesson_before_summary', array( $this->public, 'lesson_title' ), 50 );
