@@ -16,7 +16,6 @@
 	#lifterlms-students,
 	#lifterlms-students,
 	#llms-instructors,
-	#postexcerpt,
 	#authordiv,
 	#slugdiv,
 	#commentsdiv,
@@ -26,7 +25,12 @@
 	#generate_select_page_header_meta_box,
 	#elementor-switch-mode,
 	#elementor-editor,
+
 	#postdivrich {
 		display: none !important;
 	}
+}
+._llms_video_embed,
+._llms_audio_embed {
+	display: none;
 }

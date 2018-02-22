@@ -36,34 +36,12 @@ class Widget_Wixbu_Author extends WP_Widget {
 	}
 
 	/**
-	 * Adds a text field to the widget
-	 *
-	 * @param $field_name
-	 * @param string $field_description
-	 * @param string $field_default_value
-	 * @param string $field_type
-	 */
-	private function add_field( $field_name, $field_description = '', $field_default_value = '', $field_type = 'text' ) {
-		if ( ! is_array( $this->fields ) ) {
-			$this->fields = array();
-		}
-		$this->fields[ $field_name ] = array(
-			'name'          => $field_name,
-			'description'   => $field_description,
-			'default_value' => $field_default_value,
-			'type'          => $field_type
-		);
-	}
-
-	/**
 	 * Widget frontend
 	 *
 	 * @param array $args
 	 * @param array $instance
 	 */
 	public function widget( $args, $instance ) {
-		$instance['title'] = $instance['title'] ? $instance['title'] : __( 'Course Description' );
-		$title = apply_filters( 'widget_title', $instance['title'] );
 		/* Before and after widget arguments are usually modified by themes */
 		echo $args['before_widget'];
 		/* Widget output here */
@@ -83,7 +61,7 @@ class Widget_Wixbu_Author extends WP_Widget {
 		if ( function_exists( 'get_wp_user_avatar_src' ) ) {
 			$author_pic = get_wp_user_avatar_src();
 		}
-		if ( ! $author_pic ) {
+		if ( empty( $author_pic ) ) {
 			$author_pic = get_avatar( $author_email, 400 );
 		}
 

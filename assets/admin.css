@@ -14,7 +14,6 @@
 .user-role-instructor #lifterlms-students,
 .user-role-instructor #lifterlms-students,
 .user-role-instructor #llms-instructors,
-.user-role-instructor #postexcerpt,
 .user-role-instructor #authordiv,
 .user-role-instructor #slugdiv,
 .user-role-instructor #commentsdiv,
@@ -26,5 +25,9 @@
 .user-role-instructor #elementor-editor,
 .user-role-instructor #postdivrich {
   display: none !important; }
+
+._llms_video_embed,
+._llms_audio_embed {
+  display: none; }
 
 /*# sourceMappingURL=admin.css.map */

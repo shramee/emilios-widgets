@@ -116,26 +116,8 @@ a.llms-button-action {
 .single-lesson .entry-content {
   margin: 0; }
 
-h2.lesson-title {
-  padding: 7px;
-  float: right;
-  font: 500 20px Dosis,sans-serif;
-  letter-spacing: 1px;
-  margin-bottom: 2.5em; }
-
 nav.llms-course-navigation {
   clear: both; }
-
-.llms-form-field #llms_mark_complete {
-  font-weight: 600;
-  text-transform: capitalize;
-  color: #9b2256;
-  background: transparent;
-  border: 2px solid #9b2256;
-  border-radius: 4px;
-  width: 350px;
-  padding: 20px 0;
-  margin: auto; }
 
 .llms-loop-link .llms-loop-item-footer {
   display: block; }
